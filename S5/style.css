@@ -1,0 +1,257 @@
+*{
+    transition: all 0.8s ease 0.2s;
+}
+
+/*大布局定位*/
+html,body{
+    width:100%;
+    height:100%;
+    margin:0px;
+    padding: 0px;
+    overflow: hidden;
+}
+
+#display{
+    color: #686868;
+    font-size: 40px;
+    position: absolute;
+    top:180px;
+    width: 200px;
+    left: 0px;
+    height: 40px;
+    text-align: center;
+}
+
+#message{
+    position: absolute;
+    top:240px;
+    color: #313aa1;
+    /* text-align: center; */
+    font-size: 30px;
+
+}
+
+#at-plus-container{
+    position: relative;
+    width:300px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#bottom-positioner{
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+}
+
+
+#info-bar{
+    opacity: 0;
+    transform: scale(0.3);
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    bottom: 50px;
+    left: 25px;
+    border-radius: 50%;
+    background-color: #313aa1;
+}
+
+
+
+#button:hover #info-bar{
+    opacity: 1;
+    transform: scale(1.0);
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    bottom: 150px;
+    left: 25px;
+    border-radius: 50%;
+}
+
+
+
+#button:hover #info-bar:hover{
+    z-index: 5;
+    cursor: pointer;
+}
+
+/* 随机数之和 */
+.info{
+    width:20px;
+    height:20px;
+    position: absolute;
+    left: 40px;
+    top:30px;
+    font-size: 40px;
+    color: #2ae3a0;
+}
+
+
+
+#control-ring-container{
+    position: absolute;
+    width:180px;
+    height: 180px;
+    bottom: 20px;
+    left: 0px;
+    border-radius: 50%;
+}
+
+#control-ring-container li{
+    list-style: none;
+    position: absolute;
+    display: block;
+    width:32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #313aa1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 18px 18px;
+}
+
+#button #control-ring li:nth-child(1) {
+    opacity: 0;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+#button:hover #control-ring li:nth-child(1) {
+    opacity: 1;
+    margin-top: 20px;
+    margin-left: -30px;
+}
+
+#button #control-ring li:nth-child(2) {
+    opacity: 0;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+#button:hover #control-ring li:nth-child(2) {
+    opacity: 1;
+    margin-top: 60px;
+    margin-left: -40px;
+}
+
+#control-ring li:nth-child(3) {
+    opacity: 0;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+#button:hover #control-ring li:nth-child(3) {
+    opacity: 1;
+    margin-top: 100px;
+    margin-left: -27px;
+}
+
+ /* 红色气泡 */
+#control-ring .unread{
+    position: absolute;
+    color: white;
+    font-size: 13px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+    width:20px;
+    height:20px;
+    left: 15px;
+    top: -7px;
+    border-radius: 50%;
+    background-position: center;
+    background-color: #fb3834;
+    z-index: 5;
+}
+
+#control-ring .alpha{
+    position: absolute;
+    text-align: center;
+    margin: 3px -7px;
+    color: #269187;
+    font-size: 20px;
+}
+
+#control-ring li:hover{
+    cursor: pointer;
+}
+
+#control-ring li:nth-child(4) {
+    opacity: 0;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+#button:hover #control-ring li:nth-child(4) {
+    opacity: 1;
+    margin-top: 130px;
+    margin-left: 10px;
+}
+
+#control-ring li:nth-child(5) {
+    opacity: 0;
+    margin-top: 60px;
+    margin-left: 30px;
+}
+
+#button:hover #control-ring li:nth-child(5) {
+    opacity: 1;
+    margin-top: 128px;
+    margin-left: 56px;
+}
+
+#control-ring {
+    text-align: center;
+}
+
+#button{
+    width:50px;
+    height: 50px;
+    margin: 85px 65px;
+}
+
+#button:hover .apb{
+    cursor: pointer;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    bottom: 85px;
+    left:65px;
+    border-radius: 50%;
+    background-image: url('../assets/images/atplus_green.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 40px 30px;
+    background-color: #313aa1;
+}
+
+#button .apb{
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    bottom: 97px;
+    left:77px;
+    border-radius: 50%;
+    background-image: url('../assets/images/atplus_white.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 23.1px 16.5px;
+    background-color: #979cd3;
+}
+
+#control-ring .disabled{
+    background-color: #686868;
+    cursor: default;
+}
+#button .disabled {
+    background-color: #686868;
+    cursor: default;   
+}
+
+#button:hover .disabled {
+    background-color: #686868;
+    cursor: default;   
+}
